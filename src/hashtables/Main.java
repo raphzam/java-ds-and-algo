@@ -1,7 +1,9 @@
 package hashtables;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
@@ -15,6 +17,27 @@ public class Main {
         char result = findFirstUniqueCharacter(str);
         System.out.println(result);
 
+        /*
+        Given a String of characters, define a method that returns the
+        first repeated element
+         */
+
+        result = findFirstRepeatedCharacter(str);
+        System.out.println(result);
+
+    }
+
+    private static char findFirstRepeatedCharacter(String str) {
+        Set<Character> set = new HashSet<>();
+
+        for (char ch : str.toCharArray()) {
+            if (set.contains(ch))
+                return ch;
+
+            set.add(ch);
+        }
+
+        return Character.MIN_VALUE;
     }
 
     public static char findFirstUniqueCharacter(String str) {
