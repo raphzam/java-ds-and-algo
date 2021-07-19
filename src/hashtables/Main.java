@@ -1,0 +1,40 @@
+package hashtables;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Main {
+    public static void main(String[] args) {
+
+        /*
+        Given a String of characters, define a method that returns the
+        first unique (non-repeating) element
+         */
+
+        String str = "a green apple";
+        char result = findFirstUniqueCharacter(str);
+        System.out.println(result);
+
+    }
+
+    public static char findFirstUniqueCharacter(String str) {
+        Map<Character, Integer> map = new HashMap<>();
+
+        for (char ch : str.toCharArray()) {
+            if (map.containsKey(ch)) {
+                int count = map.get(ch);
+                map.put(ch, count + 1);
+                continue;
+            }
+            map.put(ch, 1);
+        }
+
+        for (char ch : str.toCharArray()) {
+            if (map.get(ch) == 1)
+                return ch;
+        }
+
+        return Character.MIN_VALUE;
+
+    }
+}
