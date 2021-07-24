@@ -16,49 +16,47 @@ public class HashTable {
     private LinkedList<Entry>[] entries = new LinkedList[5];
 
     public void put(int key, String value) {
-        int index = hash(key);
-
-        if (entries[index] == null) {
-            entries[index] = new LinkedList<>();
-        }
-
-        LinkedList<Entry> bucket = entries[index];
-        for (Entry entry : bucket) {
-            if (entry.key == key)
-                entry.value = value;
+        Entry entry = getEntry(key);
+        if (entry != null) {
+            entry.value = value;
             return;
         }
 
-        bucket.addLast(new Entry(key, value));
+        //Get bucket (LL), create bucket if null
+        int index = hash(key);
+        if (entries[index] == null) {
+            entries[index] = new LinkedList<>();
+        }
+        LinkedList<Entry> bucket = entries[index];
+        bucket.add(new Entry(key, value));
     }
 
     public String get(int key) {
-        int index = hash(key);
+        Entry entry = getEntry(key);
+        return (entry == null) ? null : entry.value;
+    }
 
-        LinkedList<Entry> bucket = entries[index];
+    public void remove(int key) {
+        Entry entry = getEntry(key);
+        if (entry == null) throw new IllegalStateException();
+        getBucket(key).remove(entry);
+    }
+
+    private LinkedList<Entry> getBucket(int key) {
+        return entries[hash(key)];
+    }
+
+    private Entry getEntry(int key) {
+        LinkedList<Entry> bucket = getBucket(key);
         if (bucket != null) {
             for (Entry entry : bucket) {
                 if (entry.key == key) {
-                    return entry.value;
+                    return entry;
                 }
             }
         }
 
         return null;
-    }
-
-    public void remove(int key) {
-        int index = hash(key);
-        LinkedList<Entry> bucket = entries[index];
-        if (bucket == null)
-            throw new IllegalStateException();
-        for (Entry entry : bucket) {
-            if (entry.key == key) {
-                bucket.remove(entry);
-                return;
-            }
-        }
-        throw new IllegalStateException();
     }
 
     private int hash(int key) {

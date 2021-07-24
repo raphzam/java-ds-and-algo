@@ -20,7 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a551105-f5ee-4236-9a9a-5c2cd0227d07" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hashtables/HashTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hashtables/HashTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hashtables/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hashtables/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +49,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -85,7 +88,8 @@
       <updated>1626728019857</updated>
       <workItem from="1626728023569" duration="22000" />
       <workItem from="1626728048728" duration="3286000" />
-      <workItem from="1626989925885" duration="1143000" />
+      <workItem from="1626989925885" duration="1587000" />
+      <workItem from="1627154942007" duration="2023000" />
     </task>
     <servers />
   </component>
@@ -125,9 +129,28 @@
       <screen x="0" y="22" width="1440" height="878" />
     </state>
     <state width="1051" height="231" key="GridCell.Tab.0.right/0.22.1440.878@0.22.1440.878" timestamp="1626732775912" />
+    <state x="879" y="386" key="ReplaceDuplicatesPrompt" timestamp="1627158374795">
+      <screen x="0" y="22" width="1440" height="878" />
+    </state>
+    <state x="879" y="386" key="ReplaceDuplicatesPrompt/0.22.1440.878@0.22.1440.878" timestamp="1627158374795" />
     <state x="254" y="63" key="SettingsEditor" timestamp="1626730664799">
       <screen x="0" y="22" width="1440" height="878" />
     </state>
     <state x="254" y="63" key="SettingsEditor/0.22.1440.878@0.22.1440.878" timestamp="1626730664799" />
+    <state x="806" y="206" width="546" height="510" key="extract.method.dialog" timestamp="1627158370040">
+      <screen x="0" y="22" width="1440" height="878" />
+    </state>
+    <state x="806" y="206" width="546" height="510" key="extract.method.dialog/0.22.1440.878@0.22.1440.878" timestamp="1627158370040" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/hashtables/Main.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

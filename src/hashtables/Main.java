@@ -25,6 +25,13 @@ public class Main {
         result = findFirstRepeatedCharacter(str);
         System.out.println(result);
 
+        HashTable map = new HashTable();
+        map.put(1, "hello");
+        map.put(2, "world");
+        map.put(3, "python");
+        map.put(1, "java");
+        System.out.println(map);
+
     }
 
     private static char findFirstRepeatedCharacter(String str) {
