@@ -11,5 +11,19 @@ public class Main {
         String reverse = stringReverser.reverse(str);
         System.out.println(reverse);
 
+        /*
+        Check is an expression is balanced by
+        validating brackets and parenthesis
+         */
+        //Edge cases
+        //(
+        //(())
+        //(]
+        //)(
+        String input = "[(1 + 2)]]";
+        Expression exp = new Expression();
+        Boolean bal = exp.isBalanced(input);
+        System.out.println(bal);
+
     }
 }
