@@ -20,11 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a551105-f5ee-4236-9a9a-5c2cd0227d07" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-ds-and-algo/stacks/Expression.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java-ds-and-algo/stacks/Expression.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-ds-and-algo/stacks/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java-ds-and-algo/stacks/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/stacks/Expression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stacks/Expression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stacks/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stacks/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

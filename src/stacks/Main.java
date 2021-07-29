@@ -20,7 +20,7 @@ public class Main {
         //(())
         //(]
         //)(
-        String input = "[(1 + 2)]";
+        String input = "[(1 + 2)]]";
         Expression exp = new Expression();
         Boolean bal = exp.isBalanced(input);
         System.out.println(bal);
