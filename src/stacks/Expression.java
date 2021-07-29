@@ -7,20 +7,31 @@ public class Expression {
         Stack<Character> stack = new Stack<>();
 
         for (char ch : input.toCharArray()) {
-            if (ch == '(' || ch == '<' || ch == '[' || ch == '{') {
+            if (isLeftBracket(ch)) {
                 stack.push(ch);
             }
 
-            if (ch == ')' || ch == '>' || ch == ']' || ch == '}') {
+            if (isRightBracket(ch)) {
                 if (stack.isEmpty()) return false;
                 char top = stack.pop();
-                if ((ch == ')' && top != '(')||
-                   (ch == '>' && top != '<') ||
-                   (ch == ']' && top != '[') ||
-                   (ch == '}' && top != '{')
-                ) return false;
+                if (!bracketsMatch(ch, top)) return false;
             }
         }
         return stack.isEmpty();
+    }
+
+    private boolean bracketsMatch(char right, char left) {
+        return (right == ')' && left == '(') ||
+                (right == '>' && left == '<') ||
+                (right == ']' && left == '[') ||
+                (right == '}' && left == '{');
+    }
+
+    private boolean isRightBracket(char ch) {
+        return ch == ')' || ch == '>' || ch == ']' || ch == '}';
+    }
+
+    private boolean isLeftBracket(char ch) {
+        return ch == '(' || ch == '<' || ch == '[' || ch == '{';
     }
 }
