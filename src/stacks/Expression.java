@@ -7,12 +7,18 @@ public class Expression {
         Stack<Character> stack = new Stack<>();
 
         for (char ch : input.toCharArray()) {
-            if (ch == '(') {
+            if (ch == '(' || ch == '<' || ch == '[' || ch == '{') {
                 stack.push(ch);
             }
 
-            if (ch == ')') {
-                stack.pop();
+            if (ch == ')' || ch == '>' || ch == ']' || ch == '}') {
+                if (stack.isEmpty()) return false;
+                char top = stack.pop();
+                if ((ch == ')' && top != '(')||
+                   (ch == '>' && top != '<') ||
+                   (ch == ']' && top != '[') ||
+                   (ch == '}' && top != '{')
+                ) return false;
             }
         }
         return stack.isEmpty();
