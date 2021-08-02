@@ -25,5 +25,14 @@ public class Main {
         Boolean bal = exp.isBalanced(input);
         System.out.println(bal);
 
+        //Testing stack implemented with array
+        Stack stack = new Stack();
+        stack.push(10);
+        stack.push(20);
+        stack.push(30);
+        System.out.println(stack);
+        stack.pop();
+        System.out.println(stack);
+
     }
 }
