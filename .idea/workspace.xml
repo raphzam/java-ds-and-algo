@@ -21,6 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="6a551105-f5ee-4236-9a9a-5c2cd0227d07" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/java-ds-and-algo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java-ds-and-algo.iml" afterDir="false" />
+>>>>>>> stacks
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +74,11 @@
       <recent name="stacks" />
     </key>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="JUnit.ExpressionTest.isBalanced">
+=======
+  <component name="RunManager" selected="JUnit.StackTest.testPeek">
+>>>>>>> stacks
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="stacks.Main" />
       <module name="java-ds-and-algo" />
@@ -97,7 +105,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="ExpressionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+=======
+    <configuration name="StackTest.testIsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+>>>>>>> stacks
       <module name="java-ds-and-algo" />
       <extension name="coverage">
         <pattern>
@@ -106,13 +118,18 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="stacks" />
+<<<<<<< HEAD
       <option name="MAIN_CLASS_NAME" value="stacks.ExpressionTest" />
       <option name="TEST_OBJECT" value="class" />
+=======
+      <option name="MAIN_CLASS_NAME" value="stacks.StackTest" />
+      <option name="METHOD_NAME" value="testIsEmpty" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExpressionTest.isBalanced" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StackTest.testPeek" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-ds-and-algo" />
       <extension name="coverage">
         <pattern>
@@ -121,8 +138,34 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="stacks" />
+      <option name="MAIN_CLASS_NAME" value="stacks.StackTest" />
+      <option name="METHOD_NAME" value="testPeek" />
+      <option name="TEST_OBJECT" value="method" />
+>>>>>>> stacks
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+<<<<<<< HEAD
+    <configuration name="ExpressionTest.isBalanced" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+=======
+    <configuration name="StackTest.testPush" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+>>>>>>> stacks
+      <module name="java-ds-and-algo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="stacks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="stacks" />
+<<<<<<< HEAD
       <option name="MAIN_CLASS_NAME" value="stacks.ExpressionTest" />
       <option name="METHOD_NAME" value="isBalanced" />
+=======
+      <option name="MAIN_CLASS_NAME" value="stacks.StackTest" />
+      <option name="METHOD_NAME" value="testPush" />
+>>>>>>> stacks
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -130,8 +173,14 @@
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="JUnit.ExpressionTest.isBalanced" />
         <item itemvalue="JUnit.ExpressionTest" />
+=======
+        <item itemvalue="JUnit.StackTest.testPeek" />
+        <item itemvalue="JUnit.StackTest.testIsEmpty" />
+        <item itemvalue="JUnit.StackTest.testPush" />
+>>>>>>> stacks
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
       </list>
