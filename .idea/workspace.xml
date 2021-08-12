@@ -19,10 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a551105-f5ee-4236-9a9a-5c2cd0227d07" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/stacks/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stacks/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stacks/StackTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stacks/StackTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="6a551105-f5ee-4236-9a9a-5c2cd0227d07" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -158,7 +155,7 @@
       <workItem from="1627154942007" duration="2896000" />
       <workItem from="1627599512805" duration="1840000" />
       <workItem from="1627688024648" duration="382000" />
-      <workItem from="1627867888703" duration="683000" />
+      <workItem from="1627867888703" duration="782000" />
     </task>
     <servers />
   </component>
