@@ -173,6 +173,7 @@
       <workItem from="1627688024648" duration="382000" />
       <workItem from="1627867888703" duration="782000" />
       <workItem from="1628735020255" duration="1023000" />
+      <workItem from="1628909244278" duration="588000" />
     </task>
     <servers />
   </component>
@@ -190,16 +191,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/hashtables/Main.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
