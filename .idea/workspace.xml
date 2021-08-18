@@ -73,7 +73,7 @@
       <recent name="stacks" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (2)">
+  <component name="RunManager" selected="Application.Main (3)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="stacks.Main" />
       <module name="java-ds-and-algo" />
@@ -100,12 +100,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hashtables.Main" />
+    <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sorting.Main" />
       <module name="java-ds-and-algo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hashtables.*" />
+          <option name="PATTERN" value="sorting.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -146,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main (2)" />
         <item itemvalue="JUnit.ExpressionTest.isBalanced" />
         <item itemvalue="JUnit.ExpressionTest" />
         <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -174,6 +174,8 @@
       <workItem from="1627867888703" duration="782000" />
       <workItem from="1628735020255" duration="1023000" />
       <workItem from="1628909244278" duration="588000" />
+      <workItem from="1629072553348" duration="318000" />
+      <workItem from="1629293800951" duration="401000" />
     </task>
     <servers />
   </component>
