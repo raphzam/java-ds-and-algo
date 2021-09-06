@@ -1,5 +1,8 @@
 package tree;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Tree {
     private class Node {
         private int value;
@@ -46,7 +49,6 @@ public class Tree {
         }
     }
 
-    // [7,4,9,1] find 4
     public boolean find(int value) {
         Node current = this.root;
         //if root is null, skip loop
@@ -144,6 +146,31 @@ public class Tree {
         traversePostOrder(root.leftChild);
         traversePostOrder(root.rightChild);
         System.out.println(root.value);
+    }
+
+    public List<Integer> getNodesAtDistance(int distance) {
+        List<Integer> list = new ArrayList<>();
+        getNodesAtDistance(root, distance, list);
+        return list;
+    }
+
+    private void getNodesAtDistance(Node root, int k, List<Integer> list) {
+        if (root == null) return;
+
+        if (k == 0) {
+            list.add(root.value);
+            System.out.println(root.value);
+            return;
+        }
+
+        getNodesAtDistance(root.leftChild, k - 1, list);
+        getNodesAtDistance(root.rightChild, k - 1, list);
+    }
+
+    public void traverseLevelOrder() {
+        for (int i = 0; i <= height(); i++) {
+            System.out.println(getNodesAtDistance(i));
+        }
     }
 
 }
