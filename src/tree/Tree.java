@@ -173,4 +173,17 @@ public class Tree {
         }
     }
 
+    public boolean isBST() {
+        return isBST(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
+    }
+
+    private boolean isBST(Node root, int min, int max) {
+        if (root == null) return true;
+
+        if (root.value < min || root.value > max) return false;
+
+        return isBST(root.leftChild, min, root.value - 1) &&
+                isBST(root.rightChild, root.value + 1, max);
+    }
+
 }
