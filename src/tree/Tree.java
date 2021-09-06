@@ -2,6 +2,7 @@ package tree;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Stack;
 
 public class Tree {
     private class Node {
@@ -184,6 +185,23 @@ public class Tree {
 
         return isBST(root.leftChild, min, root.value - 1) &&
                 isBST(root.rightChild, root.value + 1, max);
+    }
+
+    public List<Integer> iterInOrderTraversal() {
+        List<Integer> list = new ArrayList<>();
+        if (root == null) return list;
+        Stack<Node> stack = new Stack<>();
+        Node current = root;
+        while (current != null || !stack.empty()) {
+            while (current != null) {
+                stack.push(current);
+                current = current.leftChild;
+            }
+            current = stack.pop();
+            list.add(current.value);
+            current = current.rightChild;
+        }
+        return list;
     }
 
 }
