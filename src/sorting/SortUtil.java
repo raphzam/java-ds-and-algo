@@ -18,4 +18,37 @@ public class SortUtil {
         }
     }
 
+    public static void quickSort(int[] arr) {
+        quickSort(arr, 0, arr.length - 1);
+    }
+
+
+    private static void quickSort(int[] arr, int start, int end) {
+        if (start >= end) return;
+
+        int boundary = partition(arr, start, end);
+        quickSort(arr, start, boundary - 1);
+        quickSort(arr, boundary + 1, end);
+
+    }
+
+    private static int partition(int[] arr, int start, int end) {
+        int pivot = arr[end];
+        int b = start - 1;
+
+        for (int i = start; i <= end; i++) {
+            if (arr[i] <= pivot) {
+                b++;
+                swap(arr, i, b);
+            }
+        }
+        return b;
+    }
+
+    private static void swap(int[] arr, int index1, int index2) {
+        int temp = arr[index1];
+        arr[index1] = arr[index2];
+        arr[index2] = temp;
+    }
+
 }
